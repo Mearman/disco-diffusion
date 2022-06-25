@@ -441,7 +441,7 @@ except:
 if is_colab:
     if google_drive is True:
         drive.mount('/content/drive', force_remount=True)
-        root_path = '/content/drive/MyDrive/AI/Disco_Diffusion'
+        root_path = '/content/drive/MyDrive/AI/Disco_Diffusion' #@param {type:"string"}
     else:
         root_path = '/content'
 else:
