@@ -458,6 +458,7 @@ createPath(initDirPath)
 outDirPath = f'{root_path}/images_out'
 append_timestamp = True #@param {type:"boolean"}
 # timestampe in YYYYMMDD_HHMMSS format
+from datetime import datetime
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 # if append_timestamp is True, append timestamp string
 outDirPath = f'{outDirPath}/{timestamp}' if append_timestamp else outDirPath
